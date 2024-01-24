@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryColor: '#FF4240',
+                        primaryTitleColor: '#131318',
+                        primaryDescriptionColor: '#13131899',
+                        inputTextColor: '#1313184d'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="w-11/12 lg:10/12 mx-auto mt-5">
+      
+        
+
+        <nav>
+            <div class="navbar p-0 bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="pe-4 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="text-primaryColor font-bold text-base"><a>Home</a></li>
+                            <li class="text-base text-[#424247]"><a>About</a></li>
+                            <li class="text-base text-[#424247]"><a>Pages</a></li>
+                            <li class="text-base text-[#424247]"><a>Blog</a></li>
+                            <li class="text-base text-[#424247]"><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-xl lg:text-4xl font-extrabold text-primaryTitleColor">Hockey<span
+                            class="text-primaryColor">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-primaryColor font-bold text-base"><a>Home</a></li>
+                        <li class="text-base text-[#424247]"><a>About</a></li>
+                        <li class="text-base text-[#424247]"><a>Pages</a></li>
+                        <li class="text-base text-[#424247]"><a>Blog</a></li>
+                        <li class="text-base text-[#424247]"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex justify-end items-center gap-x-6">
+                    <i class="fa-solid fa-magnifying-glass w-6 text-[#89898B] hidden lg:block"></i>
+                    <button
+                        class="text-white text-base lg:text-xl font-bold bg-[#FF4240] py-1 px-5 lg:py-3 lg:px-6 rounded-lg">Get
+                        Ticket</button>
+                </div>
+            </div>
+        </nav>
+        
+        
+
+        <section class=" mt-14">
+            <div class="carousel w-full rounded-xl">
+          
+                
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero h-[100vh] rounded-2xl" style="background-image: url(img/1.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div
+                            class="text-neutral-content space-y-4 rounded-2xl p-8 lg:w-5/12 bg-black absolute -bottom-[220px] lg:bottom-8 right-0 lg:right-8">
+                            <div>
+                                <h5 class="text-white text-lg lg:text-2xl font-extrabold mb-4">Meet all the heroes from
+                                    the
+                                    field
+                                </h5>
+                                <p class="text-sm lg:text-base font-medium text-[#ffffff99]">Hello dear fans,do you want
+                                    to
+                                    meet
+                                    the
+                                    all
+                                    heroes in
+                                    the field? if you want just confirm the ticket.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute transform -translate-x-1/2 lg:translate-x-0 left-1/2 bottom-5 lg:left-10 lg:bottom-10 space-x-4">
+                        <a href="#slide3"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-ligh">❮</a>
+                        <a href="#slide2"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-ligh">❯</a>
+                    </div>
+                </div>
+
+          
+                
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero h-[100vh] rounded-2xl"
+                        style="background-image: url(https://img.freepik.com/free-photo/soccer-players-action-professional-stadium_654080-1171.jpg?w=740&t=st=1705955201~exp=1705955801~hmac=12e6e28c1f768bb44463be1e3d94ab5727edc6249dfc38ad6f5b3d345e8c8239);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div
+                            class="text-neutral-content space-y-4 rounded-2xl p-8 lg:w-5/12 bg-black absolute -bottom-[220px] lg:bottom-8 right-0 lg:right-8">
+                            <div>
+                                <h5 class="text-white text-lg lg:text-2xl font-extrabold mb-4">Meet all the heroes from
+                                    the
+                                    field
+                                </h5>
+                                <p class="text-sm lg:text-base font-medium text-[#ffffff99]">Hello dear fans,do you want
+                                    to
+                                    meet
+                                    the
+                                    all
+                                    heroes in
+                                    the field? if you want just confirm the ticket.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute transform -translate-x-1/2 lg:translate-x-0 left-1/2 bottom-5 lg:left-10 lg:bottom-10 space-x-4">
+                        <a href="#slide1"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-ligh">❮</a>
+                        <a href="#slide3"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-ligh">❯</a>
+                    </div>
+                </div>
+              
+                
+
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero h-[100vh] rounded-2xl"
+                        style="background-image: url(https://img.freepik.com/free-photo/amateur-football-concept-with-match-scene_23-2147833388.jpg?w=826&t=st=1705958414~exp=1705959014~hmac=a8867cf34c2adfc6a3d4ee7c47fa8bd89260834c2c780b0d43b483b810d0e40c);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div
+                            class="text-neutral-content space-y-4 rounded-2xl p-8 lg:w-5/12 bg-black absolute -bottom-[220px] lg:bottom-8 right-0 lg:right-8">
+                            <div>
+                                <h5 class="text-white text-lg lg:text-2xl font-extrabold mb-4">Meet all the heroes from
+                                    the
+                                    field
+                                </h5>
+                                <p class="text-sm lg:text-base font-medium text-[#ffffff99]">Hello dear fans,do you want
+                                    to
+                                    meet
+                                    the
+                                    all
+                                    heroes in
+                                    the field? if you want just confirm the ticket.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute transform -translate-x-1/2 lg:translate-x-0 left-1/2 bottom-5 lg:left-10 lg:bottom-10 space-x-4">
+                        <a href="#slide2"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-ligh">❮</a>
+                        <a href="#slide1"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-ligh">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main>
+    </header>
+    <main class="w-11/12 lg:10/12 lg:container mx-auto">
+ 
+   
+        
+        <section class="lg:my-24">
+            <div class="border-y-2 border-dashed border-[#13131833] py-8">
+                <div class="lg:w-7/12 mx-auto text-center space-y-6">
+                    <h1 class="text-2xl lg:text-4xl font-extrabold text-primaryTitleColor">Professional Hockeys Club
+                    </h1>
+                    <p class="text-primaryDescriptionColor font-medium lg:text-base">The professional hockey club
+                        showcased stellar
+                        teamwork,
+                        scoring victories and thrilling fans
+                        with
+                        skilled plays.</p>
+                </div>
+            </div>
+            
+            
+
+            <div class="mt-16 lg:flex text-center lg:gap-x-8 lg:px-20 space-y-9 lg:space-y-0">
+                <div class="space-y-5">
+                    <div class="rotate-[150deg] radial-progress text-error" style="--value:87;" role="progressbar">
+                        <span
+                            class="-rotate-[150deg] text-primaryTitleColor text-xl font-extrabold px-8 py-10">87%</span>
+                    </div>
+                    <h3 class="text-primaryTitleColor text-xl font-semibold">Prayer Facility</h3>
+                    <p class="text-base text-primaryDescriptionColor">You can get pleasant by praying and it success 87
+                        times out of 100.</p>
+                </div>
+                <div class="space-y-5">
+                    <div class="rotate-[120deg] radial-progress text-accent" style="--value:95;" role="progressbar">
+                        <span
+                            class="-rotate-[120deg] text-primaryTitleColor text-xl font-extrabold px-8 py-10">95%</span>
+                    </div>
+                    <h3 class="text-primaryTitleColor text-xl font-semibold">Experienced Coach</h3>
+                    <p class="text-base text-primaryDescriptionColor">Your productivity depend on your experienced and
+                        it success 95 times out of 100.</p>
+                </div>
+                <div class="space-y-5">
+                    <div class="rotate-[140deg] radial-progress text-warning" style="--value:90;" role="progressbar">
+                        <span
+                            class="-rotate-[140deg] text-primaryTitleColor text-xl font-extrabold px-8 py-10">90%</span>
+                    </div>
+                    <h3 class="text-primaryTitleColor text-xl font-semibold">Senior Player</h3>
+                    <p class="text-base text-primaryDescriptionColor">Senior player is so experienced so their success
+                        rate almost 90 percent.</p>
+                </div>
+                <div class="space-y-5">
+                    <div class="rotate-[145deg] radial-progress text-info" style="--value:80;" role="progressbar"><span
+                            class="-rotate-[145deg] text-primaryTitleColor text-xl font-extrabold">80%</span>
+                    </div>
+                    <h3 class="text-primaryTitleColor text-xl font-semibold">Training Ground</h3>
+                    <p class="text-base text-primaryDescriptionColor">Train ground can build up your motive and it
+                        success 80 times out of 100.</p>
+                </div>
+            </div>
+        </section>
+       
+        
+
+        <section class="my-24">
+            <div class="border-y-2 border-dashed border-[#13131833] py-8">
+                <div class="lg:w-7/12 mx-auto text-center space-y-6">
+                    <h1 class="text-2xl lg:text-4xl font-extrabold text-primaryTitleColor">Program Sections
+                    </h1>
+                    <p class="text-primaryDescriptionColor font-medium lg:text-base">Program Sections cater to diverse
+                        needs. Junior fosters early development, Teenager empowers youth, and Professional
+                        refines expertise—each unlocking unique potential and growth opportunities.</p>
+                </div>
+            </div>
+            <div class="mt-12 lg:grid lg:grid-cols-2 space-y-6 lg:space-y-0 lg:gap-6">
+               
+                
+
+                <div class="card w-full bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full" src="img/2.png" alt="Shoes" /></figure>
+                    <div class="card-body lg:mt-40">
+                        <h2 class="card-title text-xl lg:text-3xl font-extrabold text-white">Junior Program</h2>
+                        <p class="text-sm font-medium text-white">Junior Program cultivates young talents, fostering
+                            creativity, skills, and a passion for continuous learning and growth.</p>
+                        <div class="card-actions">
+                            <button
+                                class="text-white text-lg lg:text-xl font-bold bg-[#FF4240] py-2 px-6 rounded-lg">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+                <div class="card w-full bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full" src="img/3.png" alt="Shoes" /></figure>
+                    <div class="card-body lg:mt-40">
+                        <h2 class="card-title text-xl lg:text-3xl font-extrabold text-white">Teenager Program</h2>
+                        <p class="text-sm font-medium text-white">Teenager Program empowers youth through engaging
+                            activities, building resilience, and fostering lifelong skills for
+                            success.</p>
+                        <div class="card-actions">
+                            <button
+                                class="text-white text-lg lg:text-xl font-bold bg-[#FF4240] py-2 px-6 rounded-lg">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+              
+                
+
+                <div class="card lg:col-span-2 w-full lg:max-h-[450px] bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full" src="img/4.png" alt="Shoes" /></figure>
+                    <div class="card-body lg:w-1/2 lg:mt-52">
+                        <h2 class="card-title text-xl lg:text-3xl font-extrabold text-white">Professional Program</h2>
+                        <p class="text-sm font-medium text-white">Embarking on a professional program offers focused
+                            skill development, networking opportunities, and enhanced career
+                            prospects, providing a structured path for continuous growth and success.</p>
+                        <div class="card-actions">
+                            <button
+                                class="text-white text-lg lg:text-xl font-bold bg-[#FF4240] py-2 px-6 rounded-lg">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+       
+        
+
+        <section class="my-24">
+            <div class="border-y-2 border-dashed border-[#13131833] py-8">
+                <div class="lg:w-7/12 mx-auto text-center space-y-6">
+                    <h1 class="text-2xl lg:text-4xl font-extrabold text-primaryTitleColor">Our New Products
+                    </h1>
+                    <p class="text-primaryDescriptionColor font-medium lg:text-base">Introducing our new products—a
+                        fusion of innovation and quality. Elevate your experience with cutting-edge features,
+                        style, and functionality. Explore excellence in every detail.</p>
+                </div>
+            </div>
+           
+            
+
+            <div class="mt-12 lg:grid lg:grid-cols-2 gap-6 space-y-6 lg:space-y-0">
+               
+                
+
+                <div class="lg:flex items-center gap-4 border-2 border-[#1d1d201a] rounded-2xl p-6">
+                    <img class="mb-6 lg:mb-0 w-full lg:w-48 h-44" src="img/5.png" alt="">
+                    <div class="space-y-4">
+                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                        <p class="inline space-x-4 text-[#13131880]"><span>5.0</span>
+                            <span><i class="fa-regular fa-eye me-2"></i>20</span>
+                            <span><i class="fa-regular fa-heart me-2"></i>200</span>
+                        </p>
+                        <h4 class="text-xl font-extrabold text-primaryTitleColor">World Cup Flags
+                            Football</h4>
+                        <p class="text-sm lg:text-base font-medium text-primaryDescriptionColor">World Cup flags
+                            flutter proudly in passionate football celebrations worldwide.
+                        </p>
+                        <p class="space-x-4"><span class="text-primaryColor font-extrabold text-lg">Price -
+                                $22.00</span><span class="text-[#13131880] text-base font-medium"><i
+                                    class="fa-solid fa-cart-shopping"></i> Delivery
+                                Fee:Free</span></p>
+                    </div>
+                </div>
+                
+                
+
+                <div class="lg:flex items-center gap-4 border-2 border-[#1313181a] rounded-2xl p-6">
+                    <img class="mb-6 lg:mb-0 w-full lg:w-48 h-44" src="img/6.png" alt="">
+                    <div class="space-y-4">
+                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                        <p class="inline space-x-4 text-[#13131880]"><span>5.0</span>
+                            <span><i class="fa-regular fa-eye me-2"></i>20</span>
+                            <span><i class="fa-regular fa-heart me-2"></i>200</span>
+                        </p>
+                        <h4 class="text-xl font-extrabold text-primaryTitleColor">Logo for the World Cup</h4>
+                        <p class="text-sm lg:text-base font-medium text-primaryDescriptionColor">World Cup logo
+                            symbolizes global unity, capturing the spirit of football's grandeur and excitement.
+                        </p>
+                        <p class="space-x-4"><span class="text-primaryColor font-extrabold text-lg">Price -
+                                $22.00</span><span class="text-[#13131880] text-base font-medium"><i
+                                    class="fa-solid fa-cart-shopping"></i> Delivery
+                                Fee:Free</span></p>
+                    </div>
+                </div>
+                
+                
+
+                <div class="lg:flex items-center gap-4 border-2 border-[#1313181a] rounded-2xl p-6">
+                    <img class="mb-6 lg:mb-0 w-full lg:w-48 h-44" src="img/7.png" alt="">
+                    <div class="space-y-4">
+                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                        <p class="inline space-x-4 text-[#13131880]"><span>5.0</span>
+                            <span><i class="fa-regular fa-eye me-2"></i>20</span>
+                            <span><i class="fa-regular fa-heart me-2"></i>200</span>
+                        </p>
+                        <h4 class="text-xl font-extrabold text-primaryTitleColor">Cap Collection</h4>
+                        <p class="text-sm lg:text-base font-medium text-primaryDescriptionColor">Stylish caps for every
+                            occasion, adding
+                            flair to your wardrobe effortlessly.</p>
+                        <p class="space-x-4"><span class="text-primaryColor font-extrabold text-lg">Price -
+                                $22.00</span><span class="text-[#13131880] text-base font-medium"><i
+                                    class="fa-solid fa-cart-shopping"></i> Delivery
+                                Fee:Free</span></p>
+                    </div>
+                </div>
+                
+                
+
+                <div class="lg:flex items-center gap-4 border-2 border-[#1313181a] rounded-2xl p-6">
+                    <img class="mb-6 lg:mb-0 w-full lg:w-48 h-44" src="img/8.png" alt="">
+                    <div class="space-y-4">
+                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                        <p class="inline space-x-4 text-[#13131880]"><span>5.0</span>
+                            <span><i class="fa-regular fa-eye me-2"></i>20</span>
+                            <span><i class="fa-regular fa-heart me-2"></i>200</span>
+                        </p>
+                        <h4 class="text-xl font-extrabold text-primaryTitleColor">Jersey Style</h4>
+                        <p class="text-sm lg:text-base font-medium text-primaryDescriptionColor">Trendy jerseys that
+                            blend comfort with
+                            fashion for a sporty yet chic look.</p>
+                        <p class="space-x-4"><span class="text-primaryColor font-extrabold text-lg">Price -
+                                $22.00</span><span class="text-[#13131880] text-base font-medium"><i
+                                    class="fa-solid fa-cart-shopping"></i> Delivery
+                                Fee:Free</span></p>
+                    </div>
+                </div>
+              
+                
+
+                <div class="lg:flex items-center gap-4 border-2 border-[#1313181a] rounded-2xl p-6">
+                    <img class="mb-6 lg:mb-0 w-full lg:w-48 h-44" src="img/9.png" alt="">
+                    <div class="space-y-4">
+                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                        <p class="inline space-x-4 text-[#13131880]"><span>5.0</span>
+                            <span><i class="fa-regular fa-eye me-2"></i>20</span>
+                            <span><i class="fa-regular fa-heart me-2"></i>200</span>
+                        </p>
+                        <h4 class="text-xl font-extrabold text-primaryTitleColor">Helmet Haven</h4>
+                        <p class="text-sm lg:text-base font-medium text-primaryDescriptionColor">Protective helmets with
+                            style, ensuring
+                            safety and elegance on the go.</p>
+                        <p class="space-x-4"><span class="text-primaryColor font-extrabold text-lg">Price -
+                                $22.00</span><span class="text-[#13131880] text-base font-medium"><i
+                                    class="fa-solid fa-cart-shopping"></i> Delivery
+                                Fee:Free</span></p>
+                    </div>
+                </div>
+            
+                
+
+                <div class="lg:flex items-center gap-4 border-2 border-[#1313181a] rounded-2xl p-6">
+                    <img class="mb-6 lg:mb-0 w-full lg:w-48 h-44" src="img/10.png" alt="">
+                    <div class="space-y-4">
+                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                        <p class="inline space-x-4 text-[#13131880]"><span>5.0</span>
+                            <span><i class="fa-regular fa-eye me-2"></i>20</span>
+                            <span><i class="fa-regular fa-heart me-2"></i>200</span>
+                        </p>
+                        <h4 class="text-xl font-extrabold text-primaryTitleColor">Football Frenzy</h4>
+                        <p class="text-sm lg:text-base font-medium text-primaryDescriptionColor">High-quality footballs
+                            for an
+                            exhilarating game, embracing passion and precision on the field.</p>
+                        <p class="space-x-4"><span class="text-primaryColor font-extrabold text-lg">Price -
+                                $22.00</span><span class="text-[#13131880] text-base font-medium"><i
+                                    class="fa-solid fa-cart-shopping"></i> Delivery
+                                Fee:Free</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        
+
+        <section class="my-24">
+            <div class="border-y-2 border-dashed border-[#13131833] py-8">
+                <div class="lg:w-7/12 mx-auto text-center space-y-6">
+                    <h1 class="text-2xl lg:text-4xl font-extrabold text-primaryTitleColor">Clients Question</h1>
+                    <p class="text-primaryDescriptionColor font-medium lg:text-base">Clients' questions are
+                        valuable. We
+                        prioritize clear communication, providing detailed answers, ensuring satisfaction,
+                        and building lasting relationships through trust and transparency.</p>
+                </div>
+            </div>
+            
+
+            <div class="mt-12 border-[1px] border-[#1313181a] p-8 rounded-2xl lg:flex gap-10">
+                <img src="img/11.png" alt="">
+
+             
+
+
+                <div class="mt-6 lg:mt-0">
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            <h4 class="primaryTitleColor text-xl font-bold">Our Equipment</h4>
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-primaryDescriptionColor text-base">Our equipment, designed for peak
+                                performance, ensures efficiency and reliability, meeting
+                                industry standards with
+                                cutting-edge technology and durability.</p>
+                        </div>
+                        <hr class="border-1 border-[#1313181a]">
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            <h4 class="primaryTitleColor text-xl font-bold">Hockey Training</h4>
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-primaryDescriptionColor text-base">Hockey training, expertly crafted for
+                                skill development, combines passion and precision,
+                                fostering excellence on the
+                                ice.</p>
+                        </div>
+                        <hr class="border-1 border-[#1313181a]">
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            <h4 class="primaryTitleColor text-xl font-bold">Private Lessons</h4>
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-primaryDescriptionColor text-base">Private lessons offer personalized
+                                guidance, enhancing skills, building confidence, and
+                                achieving individual goals with
+                                focused attention and tailored instruction.</p>
+                        </div>
+                        <hr class="border-1 border-[#1313181a]">
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            <h4 class="primaryTitleColor text-xl font-bold">Ski Touring</h4>
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-primaryDescriptionColor text-base">Embark on an exhilarating ski touring
+                                adventure, exploring pristine landscapes and
+                                conquering snow-covered terrains with
+                                unforgettable experiences and breathtaking vistas.</p>
+                        </div>
+                        <hr class="border-1 border-[#1313181a]">
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            <h4 class="primaryTitleColor text-xl font-bold">Booking</h4>
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-primaryDescriptionColor text-base">Booking with us is seamless and
+                                convenient. Our user-friendly platform ensures a
+                                hassle-free experience, securing your
+                                spot effortlessly.</p>
+                        </div>
+                        <hr class="border-1 border-[#1313181a]">
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            <h4 class="primaryTitleColor text-xl font-bold">Pricings</h4>
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-primaryDescriptionColor text-base">Our pricings are competitive, offering
+                                value for quality. Transparent and flexible
+                                options cater to diverse needs,
+                                ensuring satisfaction and affordability.</p>
+                        </div>
+                        <hr class="border-1 border-[#1313181a]">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <section class="my-24">
+            <div class="border-y-2 border-dashed border-[#13131833] py-8">
+                <div class="lg:w-7/12 mx-auto text-center space-y-6">
+                    <h1 class="text-2xl lg:text-4xl font-extrabold text-primaryTitleColor">Get In Touch</h1>
+                    <p class="text-primaryDescriptionColor font-medium lg:text-base">Feel free to get in touch with us.
+                        We welcome inquiries and look forward to connecting with you soon.</p>
+                </div>
+            </div>
+           
+
+            <div class="mt-12 lg:flex gap-6">
+                <div class="space-y-6 lg:w-6/12 border-[1px] border-[#1313181a] px-8 rounded-2xl py-12">
+                    <div class="rounded-2xl bg-[#bced6d1a] px-12 py-8">
+                        <img src="img/Group 1171275317.png" alt="">
+                        <p class="text-[#13131866] text-base">Number:</p>
+                        <p class="text-primaryTitleColor text-lg font-extrabold">+8801708752766</p>
+                    </div>
+                    <div class="rounded-2xl bg-[#fddd5f1a] px-12 py-8">
+                        <img src=" img/Group 1171275318.png" alt="">
+                        <p class="text-[#13131866] text-base">Email:</p>
+                        <p class="text-primaryTitleColor text-lg font-extrabold">rm0066.bd@gmail.com</p>
+                    </div>
+                    <div class="rounded-2xl bg-[#629cf31a] px-12 py-8">
+                        <img src="img/Group 1171275321.png" alt="">
+                        <p class="text-[#13131866] text-base">Location</p>
+                        <address class="text-primaryTitleColor text-lg font-extrabold">284/1, East Kazapar, Mirpur-10
+                        </address>
+                    </div>
+                </div>
+                <form action="" class="w-full space-y-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-11">
+                        <div class="space-y-4">
+                            <label class="block text-primaryTitleColor text-xl font-bold" for="">Your Name</label>
+                            <input class="w-full text-base text-inputTextColor bg-[#13131808] rounded-xl py-5 ps-4"
+                                type="text" placeholder="Enter your full name">
+                        </div>
+                        <div class="space-y-4">
+                            <label class=" block text-primaryTitleColor text-xl font-bold" for="">Subject</label>
+                            <input class="w-full text-base text-inputTextColor bg-[#13131808] rounded-xl py-5 ps-4"
+                                type="email" placeholder="Enter your email">
+                        </div>
+                        <div class="space-y-4">
+                            <label class="block text-primaryTitleColor text-xl font-bold" for="">Subject</label>
+                            <input class="w-full text-base text-inputTextColor bg-[#13131808] rounded-xl py-5 ps-4"
+                                type="text" placeholder="Enter your subject">
+                        </div>
+                        <div class="space-y-4">
+                            <label class=" block text-primaryTitleColor text-xl font-bold" for="">Phone Number</label>
+                            <input class="w-full text-base text-inputTextColor bg-[#13131808] rounded-xl py-5 ps-4"
+                                type="email" placeholder="Enter your number">
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <label class=" block text-primaryTitleColor text-xl font-bold" for="">Message</label>
+                        <textarea class="text-base text-inputTextColor w-full bg-[#13131808] rounded-xl py-5 ps-4"
+                            name="" id="" cols="
+                            30" rows="10" placeholder="Write your message"></textarea>
+                    </div>
+                    <button class="p-4 w-full text-white rounded-xl bg-primaryColor text-xl font-bold ">Send
+                        Message</button>
+                </form>
+            </div>
+            
+            <div class="bg-[#13131808] p-9 text-center mt-12 rounded-xl">
+                <h3 class="text-primaryTitleColor text-2xl font-extrabold">Social Media</h3>
+                <div class="space-x-8 mt-6">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-black p-10 lg:px-32 lg:py-24 grid lg:grid-cols-4 lg:gap-24 space-y-10 lg:space-y-0">
+        <div class="space-y-4 col-span-2 lg:col-span-1 text-center lg:text-start">
+            <h3 class="text-white text-3xl font-extrabold">Get In Touch</h3>
+            <p class="text-base font-medium text-[#ffffff99]">Explore our sports business site's footer for
+                exclusive updates, partnerships, and resources.</p>
+            <p class="text-[#ffffffcc]"><i class="fa-regular fa-message text-red-500"> </i>
+                hockeys@support.com
+            </p>
+            <p class="text-[#ffffffcc] "><i class="fa-solid fa-phone text-red-500"></i> (+62) 123-321-543</p>
+        </div>
+        <div class="text-center lg:text-start">
+            <h6 class="text-white text-lg font-bold">Company</h6>
+            <ul class="text-[#ffffff99] space-y-3 mt-5">
+                <li><a href="">About us</a></li>
+                <li><a href="">Leadership</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">News & Articles</a></li>
+                <li><a href="">Legal Notice</a></li>
+            </ul>
+        </div>
+        <div class="text-center lg:text-start">
+            <h6 class="text-white text-lg font-bold">Support</h6>
+            <ul class="text-[#ffffff99] space-y-3 mt-5">
+                <li><a href="">Help Center</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Ticket Support</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col-span-2 lg:col-span-1 text-center lg:text-start">
+            <h6 class="text-white text-lg font-bold">Services</h6>
+            <ul class="text-[#ffffff99] space-y-3 mt-5">
+                <li><a href="">Academy</a></li>
+                <li><a href="">Group Lesson</a></li>
+                <li><a href="">Private Lesson</a></li>
+                <li><a href="">Hockeys for kids</a></li>
+                <li><a href="">Hockeys for Adult</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
